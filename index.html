@@ -13,11 +13,16 @@
       height: 100px;
     }
     .img1{
-      width: 80%; 
-      align-self: center;
-      padding-top: 10px;
+      object-fit: contain;
+      object-position: top;
+      width: 100%;
+      height: 100%;
     }
-    
+    #card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
     @media screen and (max-width: 576px) {
       footer {
         height: 50px;
@@ -28,11 +33,7 @@
       .img1{
         width: 100%;
       }
-      #card-body{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
+      
       
     }
   </style>
@@ -92,10 +93,12 @@
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-8 col-xl-8 offset-xl-1  p-2 d-flex ">
-        <div class="card d-flex flex-column justify-content-center">
-          <img class="img1"
-            src="https://m.media-amazon.com/images/I/41O+OkNqa7S.jpg"
-            class="card-img-top" alt="...">
+        <div class="card d-flex flex-column justify-content-center flex-fill ">
+          <div style="height: 200px;">
+            <img class="img1"
+            src="https://images.samsung.com/is/image/samsung/assets/in/computers/galaxy-book3/14951_GB3-PDP-banner_1440x450.jpg"
+            class="" alt="...">
+          </div>
           <div id="card-body" class="card-body">
             <h5 class="card-title">GALAXY BOOK PRO</h5>
             <p class="card-text">Snapdragon 8th gen2 <br>50mp main camera<br>Super Amoled display<br>3900mah battery</p>
@@ -106,7 +109,7 @@
       <div class="col-12 col-md-6 col-lg-4 col-xl-3   p-2 ">
         <div class="card mx-auto" style="height: auto;">
           <img
-            src="https://rukminim1.flixcart.com/image/850/1000/xif0q/mobile/c/1/h/-original-imagmg6gcjyuvzvn.jpeg?q=90"
+            src="https://images.samsung.com/is/image/samsung/assets/in/computers/galaxy-book3/14951_GB3-PDP-banner_1440x450.jpg"
             class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">SAMSUNG S23 PLUS</h5>
